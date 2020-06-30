@@ -9,3 +9,21 @@ function changeColor(newColor) {
       document.getElementById("Concatenate").innerHTML = sentence;
   }
 
+   function sayGreeting(greeting) {
+      var response = prompt("What is your name?");
+      alert(greeting +"," + response + "!");
+      document.getElementById("demonstration").innerHTML = response;
+   }
+
+  sayGreeting("Have a good day");
+
+  function anotherButton() {
+      var commonPhrase="Always be yourself";
+      commonPhrase += "unless you are unicorn.";
+      document.getElementById("phrasebutton").innerHTML = commonPhrase;
+  }
+   
+  function addition_Function() {
+      var addition=2+2;
+      document.getElementById("Math").innerHTML = "2+2 = " + addition;
+  }
