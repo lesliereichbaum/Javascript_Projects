@@ -33,3 +33,34 @@ function searching() {
     var pos = str.search("where");
 document.getElementById("search").innerHTML = pos;
 }
+
+//String NUmber Method 
+
+function string_Method () {
+    var X=1000;
+    document.getElementById("Numbers_to_string").innerHTML = X.toString(); 
+}
+
+//Precision Method 
+
+function precision_Method () {
+    var Y= 1234567.890123456789
+    document.getElementById("Precision").innerHTML=Y.toPrecision(11);
+}
+
+//Fixed Method 
+
+function fixed_Method() {
+    var str="Bonjour!";
+    var result = str.fixed();
+    document.getElementById("fixed").innerHTML= result;
+
+}
+
+//valueOf Method 
+
+function myValue() {
+    var str = "Bonjour!";
+    var res = str.valueOf();
+    document.getElementById("valueof").innerHTML = res;
+}
