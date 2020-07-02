@@ -1,5 +1,5 @@
 
-//Example of Global Variable 
+/*Example of Global Variable 
 var X=20;
 function Add_numbers_1 () {
     document.write(20 + X + "<br>");
@@ -38,3 +38,29 @@ function Add_numbers_6 () {
 
 Add_numbers_5 ();
 Add_numbers_6 ();
+*/
+
+function what_is_today () {
+    if (new Date().getHours() <19) {
+        document.getElementById("the_date").innerHTML="Hope you are having a nice day!";
+
+    }
+}
+
+function its_morning () {
+    if (new Date ().getHours() <10) {
+        document.getElementById("morning").innerHTML="Have an energizing morning!";
+
+    }
+}
+
+function Age_Teller() {
+    your_age = document.getElementById("your_age").value;
+    if (your_age > 18) {
+        Vote="You can vote-yay!";
+    }
+    else {
+        Vote="You are too young to vote, but you can still be politically active.";
+    }
+    document.getElementById("How_old_are_you_anyway?").innerHTML = Vote;
+}
