@@ -3,3 +3,6 @@ function number_of_letters() {
     var n = str.length;
     document.getElementById("length").innerHTML=n;
 }
+
+
+
